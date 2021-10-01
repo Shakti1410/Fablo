@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tvReason"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Reason"
+    android:fontFamily="@font/open_sans"
+    android:textSize="@dimen/_14ssp"
+    android:paddingStart="@dimen/_22sdp"
+    android:paddingEnd="@dimen/_22sdp"
+    android:paddingTop="@dimen/_14sdp"
+    android:paddingBottom="@dimen/_14sdp"
+    android:background="?selectableItemBackground"
+    android:clickable="true"
+    android:textColor="@color/colorTextTitle">
+
+</TextView>

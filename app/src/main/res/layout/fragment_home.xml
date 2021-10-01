@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".modules.home.HomeFragment">
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-32dp"
+       >
+<!--        app:cardCornerRadius="32dp"-->
+<!--        app:cardElevation="0dp"-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="56dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/lvDrawer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="visible">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="right"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_25sdp"
+                    android:backgroundTint="@color/browser_actions_divider_color"
+                    android:background="@drawable/background_border"
+                    android:paddingTop="@dimen/_2sdp"
+                    android:paddingBottom="@dimen/_2sdp"
+                    android:paddingEnd="@dimen/_4sdp"
+                    android:paddingStart="@dimen/_4sdp">
+                    <TextView
+                        android:id="@+id/tvBusiness"
+                        android:layout_width="@dimen/_40sdp"
+                        android:layout_height="wrap_content"
+                        android:text="Business"
+                        android:layout_gravity="center"
+
+                        android:background="@color/colorPrimary"
+                        android:gravity="center"
+                        android:fontFamily="@font/open_sans_semi_bold"
+                        android:textSize="@dimen/_7ssp"
+                        android:textColor="@color/colorWhite"/>
+                    <TextView
+                        android:id="@+id/tvStore"
+                        android:layout_width="@dimen/_40sdp"
+                        android:layout_height="wrap_content"
+                        android:text="Store"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+
+                        android:background="@color/browser_actions_divider_color"
+                        android:fontFamily="@font/open_sans_semi_bold"
+                        android:textSize="@dimen/_7ssp"
+                        android:textColor="@color/colorTextTitle"/>
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/tvQrTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/open_sans_semi_bold"
+                    android:text="Business QR"
+                    android:textColor="@color/colorTextTitle"
+                    android:textSize="18sp" />
+
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="16dp"
+                    android:background="@drawable/border_qr"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_qr_upper"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:fontFamily="@font/open_sans_semi_bold"
+                            android:text="We support"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/open_sans_extra_bold"
+                            android:text="#DigitalIndia"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="25sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginBottom="16dp"
+                            android:fontFamily="@font/open_sans"
+                            android:text="Scan QR to pay or check our products"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="75dp"
+                            android:background="@color/colorPrimary" />
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="16dp"
+                            app:cardElevation="8dp">
+
+                            <ImageView
+                                android:id="@+id/ivBusinessQR"
+                                android:layout_width="150dp"
+                                android:layout_height="150dp"
+                                android:scaleType="center" />
+
+                        </com.google.android.material.card.MaterialCardView>
+
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:id="@+id/tvBusinessNameQR"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/open_sans_semi_bold"
+                            android:text="Some business"
+                            android:textColor="@color/colorTextTitle"
+                            android:textSize="18sp" />
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="30dp"
+                            android:layout_marginTop="16dp"
+                            android:src="@drawable/ic_fablo_logo_200" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <TextView
+                    android:id="@+id/tvBusinessName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:visibility="gone"
+                    android:fontFamily="@font/open_sans_semi_bold"
+                    android:text="..."
+                    android:textColor="@color/colorTextTitle"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/ivDrawer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:visibility="gone"
+                    android:background="?selectableItemBackgroundBorderless"
+                    android:clickable="true"
+                    android:src="@drawable/ic_fi_rr_angle_small_down" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+<!--    <FrameLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:paddingTop="@dimen/_16sdp"-->
+<!--        android:paddingBottom="@dimen/_16sdp">-->
+
+
+
+<!--    </FrameLayout>-->
+
+</LinearLayout>

@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".store.StoreMainActivity">
+    <TextView
+        android:id="@+id/tvOutletStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:padding="4dp"
+        android:fontFamily="@font/open_sans"
+        android:textColor="@color/colorWhite"
+        android:background="@color/colorError"
+        android:text="Your outlet is currently offline"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:fontFamily="@font/open_sans_semi_bold"
+            android:textColor="@color/colorTextTitle"
+            android:layout_gravity="center"
+            android:textSize="@dimen/_16ssp"
+            android:layout_margin="@dimen/_16sdp"
+            android:text="Title"/>
+        <LinearLayout
+            android:id="@+id/businessSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="right"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:backgroundTint="@color/browser_actions_divider_color"
+            android:background="@drawable/background_border"
+            android:paddingTop="@dimen/_2sdp"
+            android:paddingBottom="@dimen/_2sdp"
+            android:paddingEnd="@dimen/_4sdp"
+            android:visibility="gone"
+            android:paddingStart="@dimen/_4sdp">
+            <TextView
+                android:id="@+id/tvBusinessS"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="wrap_content"
+                android:text="Business"
+                android:layout_gravity="center"
+                android:background="@color/browser_actions_divider_color"
+                android:gravity="center"
+                android:fontFamily="@font/open_sans_semi_bold"
+                android:textSize="@dimen/_7ssp"
+                android:textColor="@color/colorTextTitle"/>
+            <TextView
+                android:id="@+id/tvStoreS"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="wrap_content"
+                android:text="Store"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:background="@color/colorPrimary"
+                android:fontFamily="@font/open_sans_semi_bold"
+                android:textSize="@dimen/_7ssp"
+                android:textColor="@color/colorWhite"/>
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/colorDivider"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_gravity="bottom|end"
+            android:src="@drawable/ic_fi_rr_angle_small_up"/>
+
+        <FrameLayout
+            android:id="@+id/frameContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+        </FrameLayout>
+    </FrameLayout>
+
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="12dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/lvOrders"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="@dimen/_4sdp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/ivOrders"
+                    android:layout_width="@dimen/_18sdp"
+                    android:layout_height="@dimen/_18sdp"
+                    android:src="@drawable/ic_nav_orders_off"/>
+
+                <TextView
+                    android:id="@+id/tvOrders"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:fontFamily="@font/open_sans_semi_bold"
+                    android:text="Orders"
+                    android:textColor="@color/colorIconGrey"
+                    android:textSize="@dimen/_10ssp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lvMenu"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="@dimen/_4sdp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/ivMenu"
+                    android:layout_width="@dimen/_18sdp"
+                    android:layout_height="@dimen/_18sdp"
+                    android:src="@drawable/ic_nav_menu_off"/>
+
+                <TextView
+                    android:id="@+id/tvMenu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Menu"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:textColor="@color/colorIconGrey"
+                    android:fontFamily="@font/open_sans_semi_bold"
+                    android:textSize="@dimen/_10ssp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lvInsights"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:visibility="gone"
+                android:padding="@dimen/_4sdp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/ivInsights"
+                    android:layout_width="@dimen/_18sdp"
+                    android:layout_height="@dimen/_18sdp"
+                    android:src="@drawable/ic_nav_insights_off"/>
+
+                <TextView
+                    android:id="@+id/tvInsights"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Insights"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:textColor="@color/colorIconGrey"
+                    android:fontFamily="@font/open_sans_semi_bold"
+                    android:textSize="@dimen/_10ssp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lvPromos"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="@dimen/_4sdp"
+                android:visibility="gone"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/ivPromos"
+                    android:layout_width="@dimen/_18sdp"
+                    android:layout_height="@dimen/_18sdp"
+                    android:src="@drawable/ic_nav_promos_off"/>
+
+                <TextView
+                    android:id="@+id/tvPromos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Promos"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:textColor="@color/colorIconGrey"
+                    android:fontFamily="@font/open_sans_semi_bold"
+                    android:textSize="@dimen/_10ssp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lvOutlet"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="@dimen/_4sdp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/ivOutlet"
+                    android:layout_width="@dimen/_18sdp"
+                    android:layout_height="@dimen/_18sdp"
+                    android:src="@drawable/ic_nav_outlet_off"/>
+
+                <TextView
+                    android:id="@+id/tvOutlet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Outlet"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:textColor="@color/colorIconGrey"
+                    android:fontFamily="@font/open_sans_semi_bold"
+                    android:textSize="@dimen/_10ssp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>

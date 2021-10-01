@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/FabloBusiness/app/src/main/res/drawable/bg_splash.xml" value="0.3828125" />
+        <entry key="..\:/FabloBusiness/app/src/main/res/drawable/ic_animated_arrow_up.xml" value="0.3828125" />
+        <entry key="..\:/FabloBusiness/app/src/main/res/drawable/ic_fablo_logo_200.xml" value="0.3828125" />
+        <entry key="..\:/FabloBusiness/app/src/main/res/drawable/ic_fablo_vertical_logo.xml" value="0.3828125" />
+        <entry key="..\:/FabloBusiness/app/src/main/res/drawable/ic_nav_insights_off.xml" value="0.3828125" />
+        <entry key="..\:/FabloBusiness/app/src/main/res/drawable/ic_nav_insights_on.xml" value="0.3828125" />
+        <entry key="..\:/FabloBusiness/app/src/main/res/drawable/ic_nav_menu_off.xml" value="0.3828125" />
+        <entry key="..\:/FabloBusiness/app/src/main/res/drawable/ic_nav_menu_on.xml" value="0.3828125" />
+        <entry key="..\:/FabloBusiness/app/src/main/res/drawable/ic_nav_offers_off.xml" value="0.3828125" />
+        <entry key="..\:/FabloBusiness/app/src/main/res/drawable/ic_nav_offers_on.xml" value="0.3828125" />
+        <entry key="..\:/FabloBusiness/app/src/main/res/drawable/ic_nav_orders_off.xml" value="0.3828125" />
+        <entry key="..\:/FabloBusiness/app/src/main/res/drawable/ic_nav_orders_on.xml" value="0.3828125" />
+        <entry key="..\:/FabloBusiness/app/src/main/res/layout/activity_add_outlet.xml" value="0.36666666666666664" />
+        <entry key="..\:/FabloBusiness/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
+        <entry key="..\:/FabloBusiness/app/src/main/res/layout/activity_outlet_status.xml" value="0.36666666666666664" />
+        <entry key="..\:/FabloBusiness/app/src/main/res/layout/activity_store_main.xml" value="0.36666666666666664" />
+        <entry key="..\:/FabloBusiness/app/src/main/res/layout/activity_web_launch.xml" value="0.36666666666666664" />
+        <entry key="..\:/FabloBusiness/app/src/main/res/layout/bottom_sheet_city.xml" value="0.36666666666666664" />
+        <entry key="..\:/FabloBusiness/app/src/main/res/layout/bottom_sheet_storelist.xml" value="0.36666666666666664" />
+        <entry key="..\:/FabloBusiness/app/src/main/res/layout/food_item.xml" value="0.36666666666666664" />
+        <entry key="..\:/FabloBusiness/app/src/main/res/layout/fragment_accept_order.xml" value="0.33152173913043476" />
+        <entry key="..\:/FabloBusiness/app/src/main/res/layout/fragment_account.xml" value="0.36666666666666664" />
+        <entry key="..\:/FabloBusiness/app/src/main/res/layout/fragment_activity.xml" value="0.36666666666666664" />
+        <entry key="..\:/FabloBusiness/app/src/main/res/layout/fragment_addoutlet.xml" value="0.36666666666666664" />
+        <entry key="..\:/FabloBusiness/app/src/main/res/layout/fragment_bank_account.xml" value="0.36666666666666664" />
+        <entry key="..\:/FabloBusiness/app/src/main/res/layout/fragment_business_lead.xml" value="0.36666666666666664" />
+        <entry key="..\:/FabloBusiness/app/src/main/res/layout/fragment_contact_person.xml" value="0.36666666666666664" />
+        <entry key="..\:/FabloBusiness/app/src/main/res/layout/fragment_create_business.xml" value="0.33152173913043476" />
+        <entry key="..\:/FabloBusiness/app/src/main/res/layout/fragment_e_kyc.xml" value="0.36666666666666664" />
+        <entry key="..\:/FabloBusiness/app/src/main/res/layout/fragment_fssai_details.xml" value="0.36666666666666664" />
+        <entry key="..\:/FabloBusiness/app/src/main/res/layout/fragment_home.xml" value="0.33" />
+        <entry key="..\:/FabloBusiness/app/src/main/res/layout/fragment_kyc_details.xml" value="0.22" />
+        <entry key="..\:/FabloBusiness/app/src/main/res/layout/fragment_orders.xml" value="0.20520833333333333" />
+        <entry key="..\:/FabloBusiness/app/src/main/res/layout/fragment_outlet.xml" value="0.36666666666666664" />
+        <entry key="..\:/FabloBusiness/app/src/main/res/layout/fragment_outlet_details.xml" value="0.36666666666666664" />
+        <entry key="..\:/FabloBusiness/app/src/main/res/layout/fragment_setup_complete.xml" value="0.36666666666666664" />
+        <entry key="..\:/FabloBusiness/app/src/main/res/layout/fragment_tax_details.xml" value="0.36666666666666664" />
+        <entry key="..\:/FabloBusiness/app/src/main/res/layout/list_item_city.xml" value="0.36666666666666664" />
+        <entry key="..\:/FabloBusiness/app/src/main/res/layout/storelistitem.xml" value="0.36666666666666664" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.fabloplatforms.business">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FabloTrans"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".store.StoreMainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".onboard.RegistrationStepActivity"
+            android:exported="true" />
+        <activity android:name=".modules.outlets.OutletStatusActivity" />
+        <activity android:name=".common.MapBoxActivity" />
+        <activity android:name=".modules.outlets.AddOutletActivity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".onboard.BusinessSetupActivity" />
+        <activity android:name=".GatewayActivity" />
+        <activity android:name=".auth.CodeActivity" />
+        <activity android:name=".auth.PhoneActivity" />
+        <activity android:name=".store.modules.outlet.SupportActivity" />
+        <activity android:name=".store.modules.outlet.OrderHistoryActivity" />
+        <activity android:name=".store.modules.outlet.web.WebLaunchActivity" />
+        <activity
+            android:name=".SplashActivity"
+            android:theme="@style/Theme.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service android:name=".store.MyForeground" />
+        <service android:name="org.eclipse.paho.android.service.MqttService" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCF2nDajDvyOuusKeaC8KYfPzhAWmolgMo" />
+    </application>
+
+</manifest>

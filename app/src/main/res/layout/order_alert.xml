@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+   >
+
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lottieStatus"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:id="@+id/tvTitle_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:gravity="center"
+            android:fontFamily="@font/open_sans_semi_bold"
+            android:textColor="@color/colorTextTitle"
+            android:textSize="16sp"
+            android:text="Custom Instructions"/>
+
+        <TextView
+            android:id="@+id/tvDescription_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:fontFamily="@font/open_sans"
+            android:textSize="14sp"
+            android:textColor="@color/colorTextDescription"
+            android:text="Description for items"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="16dp"
+            android:orientation="horizontal">
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_order_cancel"
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                app:cornerRadius="8dp"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:fontFamily="@font/open_sans_bold"
+                android:text="Cancel "/>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_order_accept"
+                android:layout_width="120dp"
+                android:layout_height="60dp"
+                app:cornerRadius="8dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:fontFamily="@font/open_sans_bold"
+                android:text="Continue"/>
+        </LinearLayout>
+    </LinearLayout>
+

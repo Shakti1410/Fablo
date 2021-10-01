@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "396446153526",
+    "project_id": "fablo-platforms",
+    "storage_bucket": "fablo-platforms.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:396446153526:android:b7ea5ad143157b5689d197",
+        "android_client_info": {
+          "package_name": "com.fabloplatforms.business"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "396446153526-10csvs0baeuknb1ht8p4i4mmaco7raj0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.fabloplatforms.business",
+            "certificate_hash": "22ffe457bf857eff4b455e36de4c773da4a95c01"
+          }
+        },
+        {
+          "client_id": "396446153526-t2dbcbtbu5624u4ovpliqtn7u9k11q8s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDKDbxSviIkeSAb0nYaabu_C596bAhJpG4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "396446153526-t2dbcbtbu5624u4ovpliqtn7u9k11q8s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

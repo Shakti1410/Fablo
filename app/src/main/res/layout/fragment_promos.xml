@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="store.modules.promos.PromosFragment">
+
+  <!--  <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Coming soon"
+            android:textSize="@dimen/_16ssp"
+            android:fontFamily="@font/open_sans"
+            android:textColor="@color/colorTextHint"/>
+
+    </LinearLayout>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_5sdp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tvCreatePromo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Create Promos"
+                android:paddingTop="@dimen/_6sdp"
+                android:paddingBottom="@dimen/_6sdp"
+                android:paddingStart="@dimen/_12sdp"
+                android:paddingEnd="@dimen/_12sdp"
+                android:fontFamily="@font/open_sans_semi_bold"
+                android:textSize="@dimen/_12ssp"
+                android:textColor="@color/colorBlack"/>
+            <View
+                android:id="@+id/promoView"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/colorDivider"
+                android:layout_margin="@dimen/_2sdp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_5sdp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tvTrackPerformance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_marginEnd="@dimen/_4sdp"
+                android:text="Track Performance"
+                android:paddingTop="@dimen/_6sdp"
+                android:paddingBottom="@dimen/_6sdp"
+                android:paddingStart="@dimen/_12sdp"
+                android:paddingEnd="@dimen/_12sdp"
+                android:fontFamily="@font/open_sans_semi_bold"
+                android:textSize="@dimen/_12ssp"
+                android:textColor="@color/colorTextTitle"/>
+            <View
+                android:id="@+id/trackView"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/colorDivider"
+                android:layout_margin="@dimen/_2sdp"/>
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/frameSetuppromo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="16dp">
+
+    </FrameLayout>
+</LinearLayout>

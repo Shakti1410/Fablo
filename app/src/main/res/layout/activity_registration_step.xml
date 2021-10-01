@@ -1,0 +1,688 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".onboard.RegistrationStepActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/registration_step_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:fontFamily="@font/open_sans"
+            android:text="Please fill the information so that we can create an account for you." />
+
+        <LinearLayout
+            android:id="@+id/registration_step_list_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:orientation="vertical"
+                android:weightSum="8">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                    <View
+                        android:id="@+id/viewOneBasic"
+                        android:layout_width="2dp"
+                        android:layout_height="match_parent"
+                        android:layout_above="@id/ivBasic"
+                        android:layout_centerHorizontal="true"
+                        android:layout_weight="1"
+                        android:background="@color/colorDivider" />
+
+                    <ImageView
+                        android:id="@+id/ivBasic"
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/bg_circle_step_inactive"
+                        android:padding="@dimen/_8sdp"
+                        android:src="@drawable/ic_sba_business" />
+
+                    <View
+                        android:id="@+id/viewTwoBasic"
+                        android:layout_width="2dp"
+                        android:layout_height="match_parent"
+                        android:layout_below="@id/ivBasic"
+                        android:layout_centerHorizontal="true"
+                        android:layout_weight="1"
+                        android:background="@color/colorDivider" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                    <View
+                        android:id="@+id/viewOneContact"
+                        android:layout_width="2dp"
+                        android:layout_height="match_parent"
+                        android:layout_above="@id/ivContact"
+                        android:layout_centerHorizontal="true"
+                        android:layout_weight="1"
+                        android:background="@color/colorDivider" />
+
+                    <ImageView
+                        android:id="@+id/ivContact"
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/bg_circle_step_inactive"
+                        android:padding="@dimen/_8sdp"
+                        android:src="@drawable/ic_sba_contact" />
+
+                    <View
+                        android:id="@+id/viewTwoContact"
+                        android:layout_width="2dp"
+                        android:layout_height="match_parent"
+                        android:layout_below="@id/ivContact"
+                        android:layout_centerHorizontal="true"
+                        android:layout_weight="1"
+                        android:background="@color/colorDivider" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                    <View
+                        android:id="@+id/viewOneBank"
+                        android:layout_width="2dp"
+                        android:layout_height="match_parent"
+                        android:layout_above="@id/ivBank"
+                        android:layout_centerHorizontal="true"
+                        android:layout_weight="1"
+                        android:background="@color/colorDivider" />
+
+                    <ImageView
+                        android:id="@+id/ivBank"
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/bg_circle_step_inactive"
+                        android:padding="@dimen/_8sdp"
+                        android:src="@drawable/ic_sba_bank" />
+
+                    <View
+                        android:id="@+id/viewTwoBank"
+                        android:layout_width="2dp"
+                        android:layout_height="match_parent"
+                        android:layout_below="@id/ivBank"
+                        android:layout_centerHorizontal="true"
+                        android:layout_weight="1"
+                        android:background="@color/colorDivider" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                    <View
+                        android:id="@+id/viewOneTax"
+                        android:layout_width="2dp"
+                        android:layout_height="match_parent"
+                        android:layout_above="@id/ivTax"
+                        android:layout_centerHorizontal="true"
+                        android:layout_weight="1"
+                        android:background="@color/colorDivider" />
+
+                    <ImageView
+                        android:id="@+id/ivTax"
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/bg_circle_step_inactive"
+                        android:padding="@dimen/_8sdp"
+                        android:src="@drawable/ic_ao_step_details" />
+
+                    <View
+                        android:id="@+id/viewTwoTax"
+                        android:layout_width="2dp"
+                        android:layout_height="match_parent"
+                        android:layout_below="@id/ivTax"
+                        android:layout_centerHorizontal="true"
+                        android:layout_weight="1"
+                        android:background="@color/colorDivider" />
+
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                    <View
+                        android:id="@+id/viewOneFssai"
+                        android:layout_width="2dp"
+                        android:layout_height="match_parent"
+                        android:layout_above="@id/ivFssai"
+                        android:layout_centerHorizontal="true"
+                        android:layout_weight="1"
+                        android:background="@color/colorDivider" />
+
+                    <ImageView
+                        android:id="@+id/ivFssai"
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/bg_circle_step_inactive"
+                        android:padding="@dimen/_8sdp"
+                        android:src="@drawable/ic_ao_step_details" />
+
+                    <View
+                        android:id="@+id/viewTwoFssai"
+                        android:layout_width="2dp"
+                        android:layout_height="match_parent"
+                        android:layout_below="@id/ivFssai"
+                        android:layout_centerHorizontal="true"
+                        android:layout_weight="1"
+                        android:background="@color/colorDivider" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                    <View
+                        android:id="@+id/viewOneKyc"
+                        android:layout_width="2dp"
+                        android:layout_height="match_parent"
+                        android:layout_above="@id/ivKyc"
+                        android:layout_centerHorizontal="true"
+                        android:layout_weight="1"
+                        android:background="@color/colorDivider" />
+
+                    <ImageView
+                        android:id="@+id/ivKyc"
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/bg_circle_step_inactive"
+                        android:padding="@dimen/_8sdp"
+                        android:src="@drawable/ic_ao_step_details" />
+
+                    <View
+                        android:id="@+id/viewTwoKyc"
+                        android:layout_width="2dp"
+                        android:layout_height="match_parent"
+                        android:layout_below="@id/ivKyc"
+                        android:layout_centerHorizontal="true"
+                        android:layout_weight="1"
+                        android:background="@color/colorDivider" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                    <View
+                        android:id="@+id/viewOneCommision"
+                        android:layout_width="2dp"
+                        android:layout_height="match_parent"
+                        android:layout_above="@id/ivCommision"
+                        android:layout_centerHorizontal="true"
+                        android:layout_weight="1"
+                        android:background="@color/colorDivider" />
+
+                    <ImageView
+                        android:id="@+id/ivCommision"
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/bg_circle_step_inactive"
+                        android:padding="@dimen/_8sdp"
+                        android:src="@drawable/ic_ao_step_details" />
+
+                    <View
+                        android:id="@+id/viewTwoCommision"
+                        android:layout_width="2dp"
+                        android:layout_height="match_parent"
+                        android:layout_below="@id/ivCommision"
+                        android:layout_centerHorizontal="true"
+                        android:layout_weight="1"
+                        android:background="@color/colorDivider" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                    <View
+                        android:id="@+id/viewOneEkyc"
+                        android:layout_width="2dp"
+                        android:layout_height="match_parent"
+                        android:layout_above="@id/ivEkyc"
+                        android:layout_centerHorizontal="true"
+                        android:layout_weight="1"
+                        android:background="@color/colorDivider" />
+
+                    <ImageView
+                        android:id="@+id/ivEkyc"
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/bg_circle_step_inactive"
+                        android:padding="@dimen/_8sdp"
+                        android:src="@drawable/ic_ao_step_details" />
+
+                    <View
+                        android:id="@+id/viewTwoVehicle"
+                        android:layout_width="2dp"
+                        android:layout_height="match_parent"
+                        android:layout_below="@id/ivEkyc"
+                        android:layout_centerHorizontal="true"
+                        android:layout_weight="1"
+                        android:background="@color/colorDivider" />
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="8"
+                android:orientation="vertical">
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/basicDetailsCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_8sdp"
+                    android:elevation="@dimen/_8sdp"
+                    android:clickable="false"
+                    app:cardCornerRadius="@dimen/_8sdp">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_8sdp">
+
+                        <TextView
+                            android:id="@+id/tv_titleBasic"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/open_sans_semi_bold"
+                            android:text="Basic Details" />
+
+                        <TextView
+                            android:id="@+id/tvDesBasic"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tv_titleBasic"
+                            android:fontFamily="@font/open_sans"
+                            android:text="Business Name, Contact, Category, etc."
+                            android:textSize="@dimen/_8sdp" />
+
+
+                    </RelativeLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/contactPersoncard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_8sdp"
+                    android:elevation="@dimen/_8sdp"
+                    android:clickable="false"
+                    app:cardCornerRadius="@dimen/_8sdp">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_8sdp">
+
+                        <TextView
+                            android:id="@+id/tv_titleContact"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/open_sans_semi_bold"
+                            android:text="Contact Person Details" />
+
+                        <TextView
+                            android:id="@+id/tvDesContact"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tv_titleContact"
+                            android:fontFamily="@font/open_sans"
+                            android:text="Name , Email, etc. "
+                            android:textSize="@dimen/_8sdp" />
+
+
+                    </RelativeLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/bankDetailsCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_8sdp"
+                    android:elevation="@dimen/_8sdp"
+                    android:clickable="false"
+
+                    app:cardCornerRadius="@dimen/_8sdp">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_8sdp">
+
+                        <TextView
+                            android:id="@+id/tv_titleBank"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/open_sans_semi_bold"
+                            android:text="Bank Details" />
+
+                        <TextView
+                            android:id="@+id/tvDesBank"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tv_titleBank"
+                            android:fontFamily="@font/open_sans"
+                            android:text="make sure you have your passbook."
+                            android:textSize="@dimen/_8sdp" />
+
+
+                    </RelativeLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/taxDetailsCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_8sdp"
+                    android:elevation="@dimen/_8sdp"
+                    android:clickable="false"
+                    app:cardCornerRadius="@dimen/_8sdp">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_8sdp">
+
+                        <TextView
+                            android:id="@+id/tv_titleTax"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/open_sans_semi_bold"
+                            android:text="Tax Details" />
+
+                        <TextView
+                            android:id="@+id/tvDesTax"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tv_titleTax"
+                            android:fontFamily="@font/open_sans"
+                            android:text="Pan , Gst, etc."
+                            android:textSize="@dimen/_8sdp" />
+
+                    </RelativeLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/fssaiDetailsCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_8sdp"
+                    android:elevation="@dimen/_8sdp"
+                    android:clickable="false"
+                    app:cardCornerRadius="@dimen/_8sdp">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_8sdp">
+
+                        <TextView
+                            android:id="@+id/tv_titleFssai"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/open_sans_semi_bold"
+                            android:text="FSSAI Details" />
+
+                        <TextView
+                            android:id="@+id/tvDesFssai"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tv_titleFssai"
+                            android:fontFamily="@font/open_sans"
+                            android:text="Be ready with your FSSAI registration"
+                            android:textSize="@dimen/_8sdp" />
+
+                    </RelativeLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/kycDetailsCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_8sdp"
+                    android:elevation="@dimen/_8sdp"
+                    android:clickable="false"
+                    app:cardCornerRadius="@dimen/_8sdp">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_8sdp">
+
+                        <TextView
+                            android:id="@+id/tv_titleKyc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/open_sans_semi_bold"
+                            android:text="KYC Details" />
+
+                        <TextView
+                            android:id="@+id/tvDesKyc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tv_titleKyc"
+                            android:fontFamily="@font/open_sans"
+                            android:text="Be ready with your Aadhaar Details"
+                            android:textSize="@dimen/_8sdp" />
+
+                    </RelativeLayout>
+
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/commissionRateCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_8sdp"
+                    android:elevation="@dimen/_8sdp"
+                    android:clickable="false"
+                    app:cardCornerRadius="@dimen/_8sdp">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_8sdp">
+
+                        <TextView
+                            android:id="@+id/tv_titleCommission"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/open_sans_semi_bold"
+                            android:text="Commission Rate" />
+
+                        <TextView
+                            android:id="@+id/tvDesCommission"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tv_titleCommission"
+                            android:fontFamily="@font/open_sans"
+                            android:text="Commission Rate"
+                            android:textSize="@dimen/_8sdp" />
+
+                    </RelativeLayout>
+
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/eKycCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_8sdp"
+                    android:elevation="@dimen/_8sdp"
+                    android:clickable="false"
+                    app:cardCornerRadius="@dimen/_8sdp">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_8sdp">
+
+                        <TextView
+                            android:id="@+id/tv_titleEkyc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/open_sans_semi_bold"
+                            android:text="E-KYC" />
+
+                        <TextView
+                            android:id="@+id/tvDesEkyc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tv_titleEkyc"
+                            android:fontFamily="@font/open_sans"
+                            android:text="MOU, GST etc documents"
+                            android:textSize="@dimen/_8sdp" />
+
+                    </RelativeLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    <!--    <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/registration_step_privacyPolicyCheck_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/registration_step_list_layout"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/registration_step_privacyPolicyCheck"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:fontFamily="@font/open_sans"
+                android:text="By checking this you agree to our terms and Conditions and Privacy Policy."
+                android:textSize="@dimen/_9ssp" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/registration_step_privacyPolicyCheck_layout"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/registration_step_whatsappPermissionCheck"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:fontFamily="@font/open_sans"
+                android:text="By checking this you agree that we can sent alert through whatsapp to your number."
+                android:textSize="@dimen/_9ssp" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>-->
+
+
+        <Button
+            android:id="@+id/btn_creat_account"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:enabled="false"
+            android:fontFamily="@font/open_sans_bold"
+            android:text="Create my Account" />
+
+
+
+    </LinearLayout>
+
+</ScrollView>

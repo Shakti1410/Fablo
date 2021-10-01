@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_2sdp"
+        android:background="@color/colorDivider"
+        android:layout_marginBottom="@dimen/_2sdp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/picked_order_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ID: 1001"
+            android:layout_weight="1"
+            android:fontFamily="@font/open_sans"
+            android:textColor="@color/colorTextDescription"
+            android:textSize="@dimen/_12ssp"/>
+        <TextView
+            android:id="@+id/picked_order_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10:00"
+            android:fontFamily="@font/open_sans"
+            android:textColor="@color/colorTextDescription"
+            android:textSize="@dimen/_12ssp"/>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/colorDivider"
+        android:layout_marginBottom="@dimen/_2sdp"
+        android:layout_marginTop="@dimen/_2sdp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dispatched"
+            android:background="@drawable/background_border"
+            android:backgroundTint="@color/colorPrimary"
+            android:padding="5dp"
+            android:fontFamily="@font/open_sans_semi_bold"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_10ssp"/>
+        <TextView
+            android:id="@+id/picked_customer_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Customer Name"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:fontFamily="@font/open_sans"
+            android:textColor="@color/colorSuccess"
+            android:textStyle="bold"
+            android:textSize="@dimen/_12ssp"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginBottom="@dimen/_2sdp"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:background="@color/colorDivider"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_picked"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginBottom="@dimen/_2sdp"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:background="@color/colorDivider"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:text="Total Bill: "
+            android:layout_weight="1"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:fontFamily="@font/open_sans"
+            android:textColor="@color/colorTextDescription"
+            android:textSize="@dimen/_12ssp"/>
+        <TextView
+            android:id="@+id/picked_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:text="₹ 1000"
+            android:textStyle="bold"
+            android:fontFamily="@font/open_sans"
+            android:textColor="@color/colorTextDescription"
+            android:textSize="@dimen/_12ssp"/>
+
+
+
+        <!-- Tax and Discount Info Button-->
+        <ImageView
+            android:id="@+id/picked_amount_detail_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:src="@drawable/ic_fi_rr_angle_small_up"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="@dimen/_10sdp"
+            />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginBottom="@dimen/_2sdp"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:background="@color/colorDivider"/>
+    <LinearLayout
+        android:id="@+id/layout_Pdelivery_partner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <View
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="2dp"
+                android:layout_marginBottom="@dimen/_2sdp"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:background="@color/colorDivider"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:text="Delivery Partner Details "
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:fontFamily="@font/open_sans"
+                android:textColor="@color/colorTextDescription"
+                android:textSize="@dimen/_9ssp"/>
+            <View
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="2dp"
+                android:layout_marginBottom="@dimen/_2sdp"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:background="@color/colorDivider"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_55sdp"
+                android:layout_margin="@dimen/_16sdp">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/lvAddPhotoP"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bg_item_add_photos"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/deliveryP_img"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_fi_rr_camera" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_4sdp"
+                            android:fontFamily="@font/open_sans"
+                            android:text="Add photo"
+                            android:textColor="@color/colorIconGrey"
+                            android:textSize="@dimen/_10ssp" />
+
+
+                    </LinearLayout>
+
+                </FrameLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:layout_marginEnd="@dimen/_16sdp"
+                android:layout_marginBottom="@dimen/_16sdp"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/tv_deliveryP_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/open_sans"
+                    android:text="XXXXXXXXXX"
+                    android:textColor="@color/colorTextTitle"
+                    android:textSize="@dimen/_12ssp" />
+
+
+                <TextView
+                    android:id="@+id/tv_deliveryP_contact"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/open_sans"
+                    android:text="9898989898"
+                    android:textColor="@color/colorTextTitle"
+                    android:textSize="@dimen/_12ssp"  />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/open_sans"
+                        android:text="Reached in :"
+                        android:textColor="@color/colorTextTitle"
+                        android:textSize="@dimen/_10ssp"  />
+                    <TextView
+                        android:id="@+id/tv_deliveryR_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/open_sans"
+                        android:text="10 mins"
+                        android:textColor="@color/colorTextTitle"
+                        android:textSize="@dimen/_10ssp"  />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
